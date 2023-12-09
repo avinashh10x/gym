@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+}
+
+.ctext {
+    position: absolute;
+    width: 70%;
+    font-weight: bold;
+    height: 50px;
+    background-color: black;
+    color: #a70000;
+    border-radius: 0% 30% 0% 0% / 0% 100% 0% 0%   ;
+}
+
+.box:hover .ctext{
+    background-color: #a70000;
+    color: white;
+}
+
+.boximg{
+
+}
+
+.box:hover .boximg{
+    /* transform: scale(1.2); */
+}

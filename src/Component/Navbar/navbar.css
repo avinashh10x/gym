@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 100px;
+    background: transparent;
+    width: 100%;
+}
+
+
+
+
+
+.logo {
+    width: 60px;
+    border-radius: 50%;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin: 10px 1vmax;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.link:hover {
+    color: #a70000;
+}
+
+/* styles.css */
+.buttonStyles {
+    background-color: transparent;
+    color: #a70000;
+}
+
+.buttonStyles:active {
+    color: #a70000;
+}

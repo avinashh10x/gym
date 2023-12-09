@@ -1,0 +1,18 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#testImg{
+    width: 35%;
+    border-radius: 50%;
+    outline: 5px solid #ffffff;
+}
+
+.reviewbox:hover{
+    box-shadow: 0 10px 30px #a700006e;
+}
+.reviewbox:hover #testImg{
+    outline: 5px solid #a70000;
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.priceBox{
+    border: 1px solid #eeeeee4f;
+    transition: all 1s ease;
+}
+
+.priceBox:hover {
+    border: 1px solid red;
+    box-shadow: 0 10px 30px #a70000b4;
+    transform: translateY(-10px);
+    cursor: pointer;
+    >.priceTitle{
+        color: #a70000;
+    }
+}

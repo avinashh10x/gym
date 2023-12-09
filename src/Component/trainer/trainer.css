@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.trainerImg:hover {
+    transform: translateX(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.trainerName {
+    opacity: 0;
+    /* transition: opacity 0.5s ease-in-out; */
+}
+
+.trainerImg:hover .trainerName {
+    opacity: 1 !important;
+}

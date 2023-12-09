@@ -1,0 +1,20 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+height: 100%;
+width: 100%;
+}
+
+.joinbanner {
+    transform: skew(-8deg);
+}
+
+@media (min-width: 701px){
+    .joinbanner:not(:last-child) {
+        border-right: 1px dotted rgba(255, 255, 255, 0.228);
+       
+    }
+}

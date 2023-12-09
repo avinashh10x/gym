@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+
+
+}
+
+body {
+    height: 100vh;
+    background-color: #121617;
+    width: 100%;
+}
+
+
+.btn {
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 1rem;
+    color: crimson;
+    /* animation: fadeInUp 2s ease-out; */
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: rgb(221, 78, 78);
+        color: #ffffff;
+    }
+
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(50px 0%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0% 0%);
+    }
+}
+
+.heading,
+.text {
+    animation: fadeInUp 2s ease-out;
+}
+
+@media (max-width: 700px) {
+    .heading {
+        top: 40% !important;
+    }
+
+    .text {
+        top: 50% !important;
+    }
+}

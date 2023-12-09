@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.icon-link {
+    transition: fill .5s ease;
+    /* Add a smooth transition effect */
+}
+
+.icon-link:hover svg {
+    fill: #af0000;
+    /* Change the fill color to your desired color when hovered */
+}
+
+.linkodcontact:hover{
+    color: #af0000;
+}
