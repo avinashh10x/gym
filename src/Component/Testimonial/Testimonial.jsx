@@ -1,12 +1,12 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import './Testimonial.css'
+
 import pic1 from '../../assets/img/testimonial/testimonials-1.jpg'
 import pic2 from '../../assets/img/testimonial/testimonials-2.jpg'
 import pic3 from '../../assets/img/testimonial/testimonials-3.jpg'
 import pic4 from '../../assets/img/testimonial/testimonials-4.jpg'
-import { Box, HStack, Heading, Image, Stack, Text, VStack } from '@chakra-ui/react';
+import { Box,  Heading, Stack, Text, VStack } from '@chakra-ui/react';
 import './testimonial.css'
 
 const Testimonial = () => {
