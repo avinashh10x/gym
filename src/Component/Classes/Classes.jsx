@@ -10,7 +10,7 @@ const Classes = () => {
 
     return (
         <>
-            <Stack alignItems={'center'} padding={'6%'}>
+            <Stack alignItems={'center'} mt={['20vw','20px']} padding={'6%'}>
                 <Text color={'#a70000'}>OUR CLASSES</Text>
                 <Heading textAlign={'center'} padding={'0 20%'}><span>FLEX</span> WORKOUT CLASSES </Heading>
 
@@ -20,7 +20,7 @@ const Classes = () => {
                     <ClassFrame url={class2} text={"WEIGHT LIFTING"} />
                     <ClassFrame url={class3} text={"CARDIO"} />
                 </HStack>
-                <Link style={{ color: '#a70000', margin: '10px 0' }} onClick={() => window.scrollTo(0, 0)} to='/classes'>VIEW ALL CLASSES →</Link>
+                <Link style={{ color: '#a70000', margin: '10px 0' }} onClick={() => window.scrollTo(0, 0)} to='/classes'>VIEW  CLASSES →</Link>
             </Stack >
         </>
     )

@@ -53,10 +53,16 @@ body {
 
 @media (max-width: 700px) {
     .heading {
-        top: 40% !important;
+        top: 36% !important;
     }
 
     .text {
         top: 50% !important;
     }
 }
+
+/* Add this CSS to your stylesheet or component style block */
+.custom-carousel {
+    touch-action: pan-y; /* Disable vertical panning */
+  }
+  

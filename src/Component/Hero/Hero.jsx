@@ -13,9 +13,10 @@ import { Box, Button, Heading, Image, Stack, Text } from '@chakra-ui/react';
 
 import './Hero.css'
 import { Link } from 'react-router-dom';
+import { faL } from '@fortawesome/free-solid-svg-icons';
 
 
-const Hero = ({scrollToJoin}) => {
+const Hero = ({ scrollToJoin }) => {
 
 
     return (
@@ -25,17 +26,19 @@ const Hero = ({scrollToJoin}) => {
                 position={'relative'}
             >
                 <Carousel
+                    className="custom-carousel"
                     interval={5000}
                     transitionTime={1500}
                     infiniteLoop={true}
                     stopOnHover={false}
                     autoPlay={true}
+                    showIndicators={true}
                     showStatus={false}
                     showThumbs={false}
-                    showArrows={true}  // Set this to true to show navigation arrows
+                    showArrows={false}
                     useKeyboardArrows={true}
+                    swipeable={false}
                 >
-
                     <BgImg url={bg1} heading={'"Fitness is a journey, not a destination"'} text={'Tailored fitness journeys for every body and every goal.'} />
                     <BgImg url={bg2} heading={' "Wake up, work out, kick ass"'} text={' Experience workouts that bring lasting results, both physically and mentally.'} />
                     <BgImg url={bg3} heading={'"Earn your body"'} text={"Discover your inner athlete, whether you're a beginner or seasoned pro."} />
@@ -84,7 +87,7 @@ export const BgImg = ({ url, heading, text }) => {
             <Heading
                 position={'absolute'}
                 className='heading'
-                top='48%'
+                top={['30%', '50%']}
                 left='50%'
                 textTransform={'uppercase'}
                 fontSize={'2rem'}

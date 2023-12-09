@@ -4,9 +4,9 @@ import model from '../../assets/img/about.png.webp'
 import './About.css'
 
 
-const About = () => {
+const About = React.forwardRef((props, ref) => {
     return (
-        <div  >
+        <div ref={ref} >
             <Stack position={'relative'} mb={50} alignItems={'center'} direction={['column', 'row']} backgroundColor={'#121617'} padding={30} h={"100vh"}>
                 <VStack width={['80%', '40%']} bgColor={'#e7e7e7'} margin={10} border='5px solid #a70000' borderRadius={'34% 49% 25% 42% / 43% 63% 26% 40% '}>
                     <Image src={model} loading='lazy' marginTop={'9px'} className='animation' width={['600px', '800px']} />
@@ -56,6 +56,6 @@ const About = () => {
         </div>
     )
 }
-
+)
 export default About
 

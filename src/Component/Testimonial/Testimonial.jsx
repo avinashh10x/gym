@@ -13,7 +13,7 @@ const Testimonial = () => {
 
     const Review = ({ data, name, status, url }) => {
         return (
-            <Box h={500} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+            <Box h={500} display={'flex'} m={'0 5px'} justifyContent={'center'} alignItems={'center'}>
                 <VStack
                     border={'1px solid gray'}
                     w={350}
@@ -62,10 +62,12 @@ const Testimonial = () => {
                         showStatus={false}
                         showIndicators={false}
                         showThumbs={false}
+                        
                         showArrows={true}  // Set this to true to show navigation arrows
                         useKeyboardArrows={true}
                         transitionTime={1500}  // Adjust this value for the transition speed
-                        interval={4000}       // Adjust this value for the time between transitions
+                        interval={4000}  
+                        swipeable={false}     // Adjust this value for the time between transitions
                     >
 
                         <Review

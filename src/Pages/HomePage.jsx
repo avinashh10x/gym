@@ -22,8 +22,8 @@ const HomePage = () => {
     return (
         <div>
             <Hero scrollToJoin={scrollToJoin} />
-            <Join ref={joinRef}/>
-            <About />
+            <About ref={joinRef} />
+            <Join />
             <Classes />
             <Pricing />
             {/* <Trainer  /> */}

@@ -35,7 +35,7 @@ const Footer = () => {
                     </VStack>
 
                     <VStack alignItems={'flex-start'} w={'50%'} >
-                        <Heading fontSize="1.5rem">Our Contacts</Heading>
+                        <Heading fontSize="1.4rem">Our Contacts</Heading>
                         <Text display={'flex'} alignItems={'center'} gap={3}><AiFillHome />Punjab | INDIA</Text>
                         <Text display={'flex'} alignItems={'center'} gap={3}><AiFillPhone />+91 6239378916</Text>
                         <Text display={'flex'} alignItems={'center'} gap={3}><AiFillMail />Raavaannn@gmail.com</Text>
@@ -55,7 +55,7 @@ const Footer = () => {
                     ></iframe>
                 </Box>
             </Stack>
-            <Text h={30} textAlign={'center'}> Made with ❤️ by <b> <a className='linkodcontact' href="https://bluemonkey.7vfail.com/" target='blank'>bluemonkey</a></b></Text>
+            <Text h={5} fontSize={'.7rem'} textAlign={'center'}> Made with ❤️ by <b> <a className='linkodcontact' href="https://bluemonkey.7vfail.com/" target='blank'>bluemonkey</a></b></Text>
         </div>
     )
 }

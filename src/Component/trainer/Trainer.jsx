@@ -19,8 +19,8 @@ const Trainer = () => {
     }
 
     return (
-        <div style={{overflowX:'hidden'}}>
-            <Stack alignItems={'center'} padding={'4%'}>
+        <div style={{overflowX:'hidden'}}  >
+            <Stack alignItems={'center'} mt={['20vw','20px']} padding={'4%'}>
                 <Text color={'#a70000'}>TRAINER</Text>
                 <Heading textAlign={'center'} padding={'0 20%'}>FITNESS <span>TRAINER</span></Heading>
             </Stack>

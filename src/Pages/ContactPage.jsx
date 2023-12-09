@@ -14,14 +14,16 @@ import {
 } from '@chakra-ui/react';
 import { AiFillFacebook, AiFillHome, AiFillInstagram, AiFillMail, AiFillPhone, AiFillTwitterSquare, AiFillWechat } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+
+
 import logo from '../assets/img/logo1.jpeg';
+import img from '../assets/img/bg/bg_2.jpg.webp'
+
+
 import Navbar from '../Component/Navbar/Navbar';
-import BgImg from '../Component/Hero/Hero'
+import { BgImg } from '../Component/Hero/Hero';
 
-import img1 from '../assets/img/bg/bg_3.jpg.webp';
-
-const ContactPage = () => 
-{
+const ContactPage = () => {
   const [successMessageVisible, setSuccessMessageVisible] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -57,15 +59,8 @@ const ContactPage = () =>
   return (
     <div>
       <Navbar />
-      {/* <Hero/> */}
 
-
-
-      <BgImg url={img1} heading={'Your only limit is you'} text={'Tailored fitness journeys for every body and every goal.'} />
-
-
-
-
+      <BgImg url={img} heading={'"Muscles are earned, not given"'} text={'Tailored fitness journeys for every body and every goal.'} />
 
 
       <Stack alignItems={'center'} padding={'4%'}>
@@ -81,22 +76,22 @@ const ContactPage = () =>
         <Stack gap={['50', '0']} flexDirection={['column', 'row']} w={['100%', '90%']} justifyContent={'space-evenly'} alignItems={'center'}>
 
 
-          <VStack w={['90%', '50%']} gap={['50', '0']} >
-            <HStack justifyContent={'space-between'} flexDirection={['column', 'row']} gap={10} textAlign={'left'} w={['90%', '100%']}>
+          <VStack w={['90%', '50%']} gap={['50', '0']}>
+            <HStack justifyContent={'space-between'} textAlign={'center'} alignItems={'center'} flexDirection={['column', 'row']} gap={10} textAlign={'left'} w={['90%', '100%']}>
 
               <Image src={logo} boxSize={150} w={['', '30%']} />
-              <HStack w={'100%'}>
-                <VStack alignItems={'flex-start'} w={['50%', '45%']} >
+              <HStack w={'100%'} p={2} gap={0} >
+                <VStack alignItems={'flex-start'} w={['48%', '45%']} >
                   <Heading fontSize="1.5rem">Explore</Heading>
                   <Link textAlign={'left'} to={'/about'} onClick={() => window.scrollTo(0, 0)} className='linkodcontact'>&rarr; &nbsp; About Us</Link>
                   <Link textAlign={'left'} to={'/gallery'} onClick={() => window.scrollTo(0, 0)} className='linkodcontact'>&rarr; &nbsp; Visit Gallery</Link>
-                  <Link textAlign={'left'} to={'/classes'} onClick={() => window.scrollTo(0, 0)} className='linkodcontact'>&rarr; &nbsp; Awesome Classes</Link>
+                  <Link textAlign={'left'} to={'/classes'} onClick={() => window.scrollTo(0, 0)} className='linkodcontact'>&rarr; &nbsp; View Classes</Link>
                 </VStack>
 
-                <VStack alignItems={'flex-start'} w={['50%', '48%']} >
+                <VStack alignItems={'flex-start'} w={['48%', '48%']} >
                   <Heading fontSize="1.5rem">Our Contacts</Heading>
                   <Text display={'flex'} alignItems={'center'} gap={3}><AiFillHome />Punjab | INDIA</Text>
-                  <Text display={'flex'} alignItems={'center'} gap={3}><AiFillPhone />+91 6239378916</Text>
+                  <Text display={'flex'} alignItems={'center'} gap={3}><AiFillPhone />6239378916</Text>
                   <Text display={'flex'} alignItems={'center'} gap={3}><AiFillMail />Raavaannn@gmail.com</Text>
                 </VStack>
               </HStack>
@@ -104,7 +99,14 @@ const ContactPage = () =>
 
 
 
-            <form id="contact-form" action="../../contact.php" method="post" onSubmit={handleSubmit}>
+            <form id="contact-form" action="../../contact.php" method="post" onSubmit={handleSubmit}
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: '100%',
+              }}
+            >
               <Box w={'90%'} border={'1px solid #a70000'} borderRadius={10} p={10}>
                 <Stack gap={5}>
                   <Text fontSize="xl" textTransform={'uppercase'} fontWeight="bold" textAlign={'center'}>

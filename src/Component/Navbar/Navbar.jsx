@@ -31,7 +31,7 @@ function Navbar() {
             {isSmallerThan700 ? (
                 <>
                     <nav style={{ zIndex: '1' }}>
-                        <a href=""><img src={logo} className='logo' alt="" /></a>
+                        <a href="/"><img src={logo} className='logo' alt="" /></a>
                         <Button ref={btnRef} variant={'ghost'} colorScheme='#a70000' onClick={onOpen}>
                             <HamburgerIcon />
                         </Button>
@@ -85,6 +85,8 @@ function Navbar() {
                                 </DrawerBody>
                             </DrawerContent>
                         </Drawer>
+
+
                     </nav>
 
                 </>

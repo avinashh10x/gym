@@ -5,12 +5,12 @@ import img1 from '../../assets/img/001-fitness.svg'
 import img2 from '../../assets/img/002-treadmill.svg'
 import img3 from '../../assets/img/003-vip-card.svg'
 
-const Join = React.forwardRef((props, ref) => {
+const Join = () => {
 
 
   return (
-    <div ref={ref}>
-      <Stack alignItems={'center'} marginTop={'60px'} padding={'5%'}>
+    <div >
+      <Stack alignItems={'center'} mt={['100px','10px']} padding={'5%'}>
         <Text color={'#a70000'}>JOIN US NOW</Text>
         <Heading textAlign={'center'} padding={'0 20%'}>JOIN OUR FREE WORKOUT TRAINING WITH <span>FLEX</span></Heading>
         <HStack gap={10} p={25} flexDirection={['column', 'row']}>
@@ -25,7 +25,7 @@ const Join = React.forwardRef((props, ref) => {
       </Stack>
     </div>
   )
-})
+}
 
 export default Join
 
