@@ -77,7 +77,7 @@ const ContactPage = () => {
 
 
           <VStack w={['90%', '50%']} gap={['50', '0']}>
-            <HStack justifyContent={'space-between'} textAlign={'center'} alignItems={'center'} flexDirection={['column', 'row']} gap={10} textAlign={'left'} w={['90%', '100%']}>
+            <HStack justifyContent={'space-between'} textAlign={'center'} alignItems={'center'} flexDirection={['column', 'row']} gap={10}  w={['90%', '100%']}>
 
               <Image src={logo} boxSize={150} w={['', '30%']} />
               <HStack w={'100%'} p={2} gap={0} >

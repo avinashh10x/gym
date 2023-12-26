@@ -27,7 +27,7 @@ const Hero = ({ scrollToJoin }) => {
             >
                 <Carousel
                     className="custom-carousel"
-                    interval={5000}
+                    interval={5000000}
                     transitionTime={1500}
                     infiniteLoop={true}
                     stopOnHover={false}
@@ -95,7 +95,7 @@ export const BgImg = ({ url, heading, text }) => {
             </Heading>
             <Text
                 position={'absolute'}
-                top={'55%'}
+                top={'57%'}
                 className='text'
                 left='50%'
                 transform="translate(-50%,-50%)"

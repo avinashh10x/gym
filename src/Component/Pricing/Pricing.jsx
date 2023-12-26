@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import img1 from '../../assets/img/001-fitness.svg'
 import { Box, Button, HStack, Heading, Stack, Text, VStack } from '@chakra-ui/react'
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
 
@@ -18,7 +19,8 @@ const Pricing = () => {
                 <Text>{l3}</Text>
                 <Text>{l4}</Text>
                 <Text>{l5}</Text>
-                <Button colorScheme='red' variant={'ghost'} mt={10}>GET STARTED</Button>
+                <Button colorScheme='red' variant={'ghost'} mt={10}><Link className='linkodcontact' to='/contact'>GET STARTED</Link></Button>
+
             </Box>
         )
     }
@@ -64,7 +66,7 @@ const Pricing = () => {
 
                 </HStack>
                 <HStack gap={10} p={25} flexDirection={['column', 'row']}>
-                    <Banner url={""}  heading={'THOUSANDS OF EQUIPMENTS'} text={"Explore a world of fitness possibilities with our vast array of cutting-edge equipment. Join us for free training sessions and let the serene flow of Duden lead you to a paradisematic experience, where each workout becomes a journey."} />
+                    <Banner url={""} heading={'THOUSANDS OF EQUIPMENTS'} text={"Explore a world of fitness possibilities with our vast array of cutting-edge equipment. Join us for free training sessions and let the serene flow of Duden lead you to a paradisematic experience, where each workout becomes a journey."} />
                     <Banner url={""} heading={'OPEN 24/7 FLEX GYM FITNESS'} text={"Experience the freedom of fitness at any hour with FLEX GYM. Our doors are open 24/7, providing you with unparalleled access to top-notch facilities. Join us for free training sessions and let the rhythmic flow of Duden guide you on your fitness journey."} />
                     <Banner url={""} heading={'BEST FOOD SUPPLEMENTS FOR YOU'} text={"Fuel your fitness journey with our premium selection of food supplements. Join us for free training sessions and let the rhythmic flow of Duden guide you to a paradisematic country, where nutrition meets excellence. Discover a new level of vitality with our carefully curated supplements."} />
                 </HStack>
