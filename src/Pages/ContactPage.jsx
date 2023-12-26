@@ -99,7 +99,7 @@ const ContactPage = () => {
 
 
 
-            <form id="contact-form" action="../../contact.php" method="post" onSubmit={handleSubmit}
+            <form id="contact-form" action="/contact.php" method="post" onSubmit={handleSubmit}
               style={{
                 display: 'flex',
                 flexDirection: 'column',
