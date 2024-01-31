@@ -101,7 +101,7 @@ function Navbar() {
                         <li><Link className='linkodcontact' to='/gallery'>Gallery</Link></li>
                         <li><Link className='linkodcontact' to='/about'>About</Link></li>
                         {/* <li><Link className='linkodcontact' to='/schedule'>Schedules</Link></li> */}
-                        {/* <li><Link className='linkodcontact' to='/contact'>Contact</Link></li> */}
+                        <li><Link className='linkodcontact' to='/contact'>Contact</Link></li>
                         <li><Link className='linkodcontact' to='/join'>Become a <span>Member</span></Link></li>
                     </ul>
                 </nav>
